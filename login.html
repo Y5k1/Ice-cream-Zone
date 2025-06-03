@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login & Registration Form</title>
+  <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="check">
+    
+    <!-- Login Form -->
+    <div class="login form">
+      <img src="https://t4.ftcdn.net/jpg/02/17/36/83/360_F_217368346_U0trhJeBSG7M9feVwW073Eb3m9j5CIcW.jpg" class="avatar">
+      <header>Login</header>
+      <form onsubmit="redirectToAbout(); return false;">
+          <input type="email" placeholder="Enter your email" required>
+          <input type="password" placeholder="Enter your password" required>
+          <a href="#">Forgot password?</a>
+          <label>
+            <input type="checkbox" id="loginTermsCheckbox">
+            I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a>
+          </label>
+          <br><br>
+          <button type="submit" id="loginButton" class="disabled-button" disabled>
+            Login
+          </button>
+        </form>
+        <div class="signup">
+          <span>Don't have an account? <label for="check">Signup</label></span>
+        </div>
+      </div>
+   
+    <!-- Registration Form -->
+    <div class="registration form">
+      <header>Signup</header>
+      <form onsubmit="redirectToAbout(); return false;">
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Create a password" required>
+        <input type="password" placeholder="Confirm your password" required>
+        <label>
+          <input type="checkbox" id="signupTermsCheckbox">
+          I agree to the <a href="terms-and-conditions.html" target="_blank">Terms and Conditions</a>
+        </label>
+        <br><br>
+        <button type="submit" id="signupButton" class="disabled-button" disabled>
+          Signup
+        </button>
+      </form>
+      <div class="signup">
+        <span>Already have an account? <label for="check">Login</label></span>
+      </div>
+    </div>
+  </div>
+<script>
+  // Login form functionality
+    const loginTermsCheckbox = document.getElementById("loginTermsCheckbox");
+    const loginButton = document.getElementById("loginButton");
+
+    loginTermsCheckbox.addEventListener("change", () => {
+      if (loginTermsCheckbox.checked) {
+        loginButton.disabled = false;
+        loginButton.classList.remove("disabled-button");
+        loginButton.classList.add("enabled-button");
+      } else {
+        loginButton.disabled = true;
+        loginButton.classList.remove("enabled-button");
+        loginButton.classList.add("disabled-button");
+      }
+    });
+
+    // Signup form functionality
+    const signupTermsCheckbox = document.getElementById("signupTermsCheckbox");
+    const signupButton = document.getElementById("signupButton");
+
+    signupTermsCheckbox.addEventListener("change", () => {
+      if (signupTermsCheckbox.checked) {
+        signupButton.disabled = false;
+        signupButton.classList.remove("disabled-button");
+        signupButton.classList.add("enabled-button");
+      } else {
+        signupButton.disabled = true;
+        signupButton.classList.remove("enabled-button");
+        signupButton.classList.add("disabled-button");
+      }
+    });</script>
+  <script src="loginscript.js"></script>
+</body>
+</html>
+
+
+
+
+
+      

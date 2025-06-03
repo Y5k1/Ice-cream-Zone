@@ -1,0 +1,52 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f5cece;
+    background: url('https://static.vecteezy.com/system/resources/previews/013/151/037/original/light-blue-and-pink-gradient-background-free-vector.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: start;
+}
+
+
+header h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+  .button-container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 50vh;
+}
+
+.button {
+    background-color: #ff1778;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+    padding: 10px 20px;
+    margin: 15px;
+    text-align: start;
+    cursor: pointer;
+}
+
+.button:hover {
+   cursor: pointer;
+   background: #f55ccc;
+   color: #000;
+}
+    
+p{
+    font-weight: bold;
+}

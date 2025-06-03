@@ -1,0 +1,64 @@
+body {
+    font-family: Courier New, monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffe4e1;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/037/236/441/non_2x/ai-generated-beautuful-ice-cream-background-with-copy-space-free-photo.jpg);
+    background-size: cover;
+    text-align: start;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #ff6f61;
+    transform: scale(1.1);
+}
+
+h1 {
+    color: #000000;
+    text-align: start;
+}
+h2 {
+    color: #000000;
+    text-align: start;
+}
+
+h3 {
+  color: #333;
+  text-align: justify;
+  font-size: 35px;
+}
+
+p{
+    color: #000000;
+    text-align: justify;
+    font-size: 30px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}

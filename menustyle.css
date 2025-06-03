@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f5cece;
+    background: url('https://static.vecteezy.com/system/resources/previews/013/151/037/original/light-blue-and-pink-gradient-background-free-vector.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+
+header h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #ff6f61;
+    transform: scale(1.1);
+}
+
+/* Main Heading */
+h1 {
+    color: #ffffff;
+    font-size: 50px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Menu Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    overflow: hidden; /* Hide anything outside the bounds */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* makes sure all images are clipped and fill the container */
+    object-position: center; /*keeps the center of the image in view */
+}
+
+.gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+    transition: background 0.3s;
+}
+
+.gallery-item:hover .caption {
+    background: rgba(255, 111, 97, 0.8);
+}
+
+/*Footer Section*/
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    color: #555;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Parlor - Reviews</title>
+    <link rel="stylesheet" href="reviewstyle.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" aria-label="Go to Home Page">Home</a>
+        <a href="about.html" aria-label="Learn more About Us">About</a>
+        <a href="menu.html" aria-label="View our Menu">Menu</a>
+        <a href="order.html" aria-label="Place an Order">Order</a>
+        <a href="review.html" aria-label="Read Customer Reviews" class="active">Review</a>
+        <a href="contact.html" aria-label="Contact Us">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Customer Reviews</h1>
+        <div class="rating">
+            <span id="rating">0</span>/5
+        </div>
+        <div class="stars" id="stars">
+            <span class="star" data-value="1" aria-label="Rate 1 star">★</span>
+            <span class="star" data-value="2" aria-label="Rate 2 stars">★</span>
+            <span class="star" data-value="3" aria-label="Rate 3 stars">★</span>
+            <span class="star" data-value="4" aria-label="Rate 4 stars">★</span>
+            <span class="star" data-value="5" aria-label="Rate 5 stars">★</span>
+        </div>
+        <p>Share your review:</p>
+        <textarea id="review" placeholder="Write your review here" aria-label="Review Input"></textarea>
+        <button id="submit" aria-label="Submit Review">Submit</button>
+        <div class="reviews" id="reviews">
+            <div class="review">
+                <p><strong>John Doe</strong> - <span class="stars-display">★★★★★</span></p>
+                <p>Amazing ice cream and friendly staff!</p>
+            </div>
+            <div class="review">
+                <p><strong>Jane Smith</strong> - <span class="stars-display">★★★★☆</span></p>
+                <p>Delicious flavors but the service was a bit slow.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="reviewscript.js"></script>
+</body>
+
+</html>
